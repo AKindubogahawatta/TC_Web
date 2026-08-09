@@ -3,7 +3,7 @@ import "./styles.css";
 
 const SHOP_URL = "https://tastyceylon.co.uk";
 const IMAGES = {
-  logo: "./public/assets/tasy-ceylon-logo.png",
+  logo: "/assets/tasy-ceylon-logo.png",
   hero: "/assets/tasty-ceylon-hero.jpg",
   kottu: "/assets/kottu.png",
   rice: "/assets/rice.png",
@@ -129,17 +129,35 @@ function ArrowButton({ children, className = "" }) {
   );
 }
 
+// function BrandMark({ large = false }) {
+//   return (
+//     <span className={`brand-mark${large ? " brand-mark--large" : ""}`} aria-hidden="true">
+//       <span>🐘</span><b>TC</b>
+//     </span>
+//   );
+// }
+
 function BrandMark({ large = false }) {
   return (
     <img
-      className={`brand-mark${large ? " brand-mark--large" : ""}`}
-      src={IMAGES.logo}
+      className={`navbar-logo${large ? " navbar-logo--large" : ""}`}
+      src="/assets/tasty-ceylon-logo.png"
       alt="Tasty Ceylon logo"
-      width="505"
-      height="401"
     />
   );
 }
+
+// function BrandMark({ large = false }) {
+//   return (
+//     <img
+//       className={`brand-mark${large ? " brand-mark--large" : ""}`}
+//       src={IMAGES.logo}
+//       alt="Tasty Ceylon logo"
+//       width="505"
+//       height="401"
+//     />
+//   );
+// }
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
