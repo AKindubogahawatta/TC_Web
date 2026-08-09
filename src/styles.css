@@ -472,3 +472,24 @@ button { font: inherit; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   [data-reveal] { opacity: 1; transform: none; }
 }
+
+
+.navbar-logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.navbar-logo--large {
+  width: min(75%, 460px);
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .navbar-logo {
+    width: 44px;
+    height: 44px;
+  }
+}
