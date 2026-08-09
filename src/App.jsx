@@ -3,10 +3,15 @@ import "./styles.css";
 
 const SHOP_URL = "https://tastyceylon.co.uk";
 const IMAGES = {
-  hero: "https://www.aniprivateresorts.com/wp-content/uploads/2022/05/Ani-Sri-Lanka_Gallery21.jpg",
-  kottu: "https://tudestinoviajar.com/wp-content/uploads/2025/04/Kottu-Roti.jpeg",
-  rice: "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/recipe_pics_v2/medium/sri_lankan_chicken_biriyani.jpg",
-  curry: "https://www.theflavorbender.com/wp-content/uploads/2018/02/Sri-Lankan-Chicken-Curry-The-Flavor-Bender-2-1-700x1049.jpg",
+  logo: "/assets/tasy-ceylon-logo.png",
+  hero: "/assets/tasty-ceylon-hero.jpg",
+  kottu: "/assets/kottu.png",
+  rice: "/assets/rice.png",
+  curry: "/assets/curry.png",
+  //hero: "https://www.aniprivateresorts.com/wp-content/uploads/2022/05/Ani-Sri-Lanka_Gallery21.jpg",
+ // kottu: "https://tudestinoviajar.com/wp-content/uploads/2025/04/Kottu-Roti.jpeg",
+ // rice: "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/recipe_pics_v2/medium/sri_lankan_chicken_biriyani.jpg",
+ // curry: "https://www.theflavorbender.com/wp-content/uploads/2018/02/Sri-Lankan-Chicken-Curry-The-Flavor-Bender-2-1-700x1049.jpg",
 };
 
 const cultureCards = [
@@ -126,9 +131,13 @@ function ArrowButton({ children, className = "" }) {
 
 function BrandMark({ large = false }) {
   return (
-    <span className={`brand-mark${large ? " brand-mark--large" : ""}`} aria-hidden="true">
-      <span>🐘</span><b>TC</b>
-    </span>
+    <img
+      className={`brand-mark${large ? " brand-mark--large" : ""}`}
+      src={IMAGES.logo}
+      alt="Tasty Ceylon logo"
+      width="505"
+      height="401"
+    />
   );
 }
 
