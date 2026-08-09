@@ -3,7 +3,7 @@ import "./styles.css";
 
 const SHOP_URL = "https://tastyceylon.co.uk";
 const IMAGES = {
-  logo: "/assets/tasy-ceylon-logo.png",
+  logo: "./public/assets/tasy-ceylon-logo.png",
   hero: "/assets/tasty-ceylon-hero.jpg",
   kottu: "/assets/kottu.png",
   rice: "/assets/rice.png",
